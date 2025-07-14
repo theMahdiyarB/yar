@@ -3,9 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 // This component provides a button to toggle between English and Persian.
 export default function LanguageSwitcher() {
-  // Destructure the i18n object from the useTranslation hook.
-  // The i18n object contains everything we need to manage languages.
-  const { i18n } = useTranslation();
+  // Get both the 't' function for translations and the 'i18n' object
+  const { t, i18n } = useTranslation();
 
   // Get the current language code (e.g., 'en' or 'fa')
   const currentLanguage = i18n.language;
@@ -24,17 +23,19 @@ export default function LanguageSwitcher() {
       <button
         onClick={handleLanguageChange}
         className="flex items-center justify-center w-28 h-12 bg-white rounded-full shadow-md hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-        aria-label={`Switch to ${currentLanguage === 'en' ? 'Persian' : 'English'}`}
+        aria-label={`${t('languageSwitcher.switchTo')} ${currentLanguage === 'en' ? t('languageSwitcher.persian') : t('languageSwitcher.english')}`}
       >
         {currentLanguage === 'en' ? (
           <>
             <span className="text-lg mr-2">🇮🇷</span>
-            <span className="font-semibold text-gray-700">فارسی</span>
+            {/* Use the 't' function to get text from your json file */}
+            <span className="font-semibold text-gray-700">{t('languageSwitcher.persian')}</span>
           </>
         ) : (
           <>
             <span className="text-lg mr-2">🇺🇸</span>
-            <span className="font-semibold text-gray-700">English</span>
+            {/* Use the 't' function to get text from your json file */}
+            <span className="font-semibold text-gray-700">{t('languageSwitcher.english')}</span>
           </>
         )}
       </button>

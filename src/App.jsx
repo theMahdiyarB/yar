@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css'; // Keep for any global styles you might have
 import { supabase } from './supabaseClient'; // Your Supabase client
 import AuthForm from './AuthForm'; // The login/signup form
-import LanguageSwitcher from './LanguageSwitcher'; // The language toggle component
+import LanguageSwitcher from './LanguageSwitcher.jsx'; // The language toggle component
 import CompanionshipRequestForm from './CompanionshipRequestForm'; // The companionship request form
 import OpenRequestsList from './OpenRequestsList'; // The open requests list component
 
