@@ -1,28 +1,35 @@
 {
+  "appTitle": "یار",
   "auth": {
-    "welcomeBack": "خوش آمدید",
-    "createAccount": "ایجاد حساب کاربری",
-    "loginPrompt": "برای ادامه وارد شوید.",
-    "signupPrompt": "همین امروز با ما شروع کنید.",
-    "emailLabel": "آدرس ایمیل",
+    "title": "به یار خوش آمدید",
+    "description": "برای ادامه وارد شوید یا حساب کاربری بسازید",
+    "emailLabel": "ایمیل",
     "passwordLabel": "رمز عبور",
-    "loginButton": "ورود",
-    "signupButton": "ثبت نام",
-    "processingButton": "در حال پردازش...",
-    "switchToSignup": "حساب کاربری ندارید؟ ثبت نام کنید",
-    "switchToLogin": "قبلاً حساب کاربری ساخته‌اید؟ وارد شوید",
-    "signupSuccess": "موفقیت! لطفاً ایمیل خود را برای تأیید حساب کاربری بررسی کنید."
+    "emailPlaceholder": "your@email.com",
+    "signIn": "ورود",
+    "signUp": "ثبت نام",
+    "signOut": "خروج",
+    "loading": "در حال بارگذاری...",
+    "loginError": "ورود ناموفق: {{message}}",
+    "signupError": "ثبت نام ناموفق: {{message}}",
+    "signupSuccess": "ایمیل خود را برای لینک تایید بررسی کنید!"
   },
-  "languageSwitcher": {
-    "persian": "فارسی",
-    "english": "English",
-    "switchTo": "تغییر به"
+  "companionshipRequest": {
+    "title": "درخواست همراهی",
+    "nameLabel": "نام",
+    "contactInfoLabel": "اطلاعات تماس (تلفن یا ایمیل)",
+    "detailsLabel": "جزئیات درخواست شما",
+    "submitButton": "ارسال درخواست",
+    "requestSubmitted": "درخواست شما با موفقیت ثبت شد!",
+    "errorSubmitting": "خطا در ارسال درخواست: {{error}}"
   },
-  "dashboard": {
-    "title": "داشبورد",
-    "signOut": "خروج از حساب",
-    "welcomeMessage": "خوش آمدید، ",
-    "userId": "شناسه کاربری:",
-    "mainContentMessage": "محتوای اصلی برنامه شما در اینجا قرار خواهد گرفت. اکنون می‌توانید اطلاعات مخصوص کاربر را از پایگاه داده دریافت کنید."
+  "openRequests": {
+    "title": "درخواست‌های همراهی باز",
+    "noRequests": "در حال حاضر درخواستی وجود ندارد.",
+    "markFulfilled": "علامت‌گذاری به عنوان انجام شده",
+    "deleteRequest": "حذف",
+    "fulfilledSuccess": "درخواست به عنوان انجام شده علامت‌گذاری شد.",
+    "deleteSuccess": "درخواست حذف شد.",
+    "error": "خطایی روی داد: {{error}}"
   }
 }
