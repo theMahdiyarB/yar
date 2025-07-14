@@ -1,0 +1,28 @@
+{
+  "auth": {
+    "welcomeBack": "خوش آمدید",
+    "createAccount": "ایجاد حساب کاربری",
+    "loginPrompt": "برای ادامه وارد شوید.",
+    "signupPrompt": "همین امروز با ما شروع کنید.",
+    "emailLabel": "آدرس ایمیل",
+    "passwordLabel": "رمز عبور",
+    "loginButton": "ورود",
+    "signupButton": "ثبت نام",
+    "processingButton": "در حال پردازش...",
+    "switchToSignup": "حساب کاربری ندارید؟ ثبت نام کنید",
+    "switchToLogin": "قبلاً حساب کاربری ساخته‌اید؟ وارد شوید",
+    "signupSuccess": "موفقیت! لطفاً ایمیل خود را برای تأیید حساب کاربری بررسی کنید."
+  },
+  "languageSwitcher": {
+    "persian": "فارسی",
+    "english": "English",
+    "switchTo": "تغییر به"
+  },
+  "dashboard": {
+    "title": "داشبورد",
+    "signOut": "خروج از حساب",
+    "welcomeMessage": "خوش آمدید، ",
+    "userId": "شناسه کاربری:",
+    "mainContentMessage": "محتوای اصلی برنامه شما در اینجا قرار خواهد گرفت. اکنون می‌توانید اطلاعات مخصوص کاربر را از پایگاه داده دریافت کنید."
+  }
+}
