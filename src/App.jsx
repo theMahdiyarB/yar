@@ -36,7 +36,7 @@ const Dashboard = ({ user, onSignOut }) => {
           
           {/* Left Column: Request Form */}
           <div className="bg-white p-6 rounded-xl shadow-lg">
-            <CompanionshipRequestForm session={{ user }} />
+            <CompanionshipRequestForm user={user} />
           </div>
 
           {/* Right Column: List of Open Requests */}
