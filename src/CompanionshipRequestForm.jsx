@@ -3,8 +3,8 @@ import { supabase } from './supabaseClient';
 
 /**
  * Form for creating a new companionship request.
- * @param {{ user: object }} props
- */
+ * @param {{ user: object }} props - The logged in user.
+*/
 function CompanionshipRequestForm({ user }) {
   const [patientName, setPatientName] = useState('');
   const [location, setLocation] = useState('');
@@ -18,7 +18,7 @@ function CompanionshipRequestForm({ user }) {
     setError(null);
     setSuccess(false);
 
-    const { data, error } = await supabase.from('requests').insert([
+    const { error } = await supabase.from('requests').insert([
       {
         user_id: user.id,
         patient_name: patientName,
