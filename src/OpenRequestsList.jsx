@@ -3,9 +3,10 @@ import { supabase } from './supabaseClient';
 
 /**
  * Displays a list of open companionship requests with an Accept button.
- * @param {{ user: object }} props
- */
-function OpenRequestsList({ user }) {
+ * @param {{ user?: { id: string|null } }} props - Currently logged in user.
+ *   Defaults to an object with a null id if not provided.
+*/
+function OpenRequestsList({ user = { id: null } }) {
   const [requests, setRequests] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -69,5 +70,9 @@ function OpenRequestsList({ user }) {
     </div>
   );
 }
+
+OpenRequestsList.defaultProps = {
+  user: { id: null },
+};
 
 export default OpenRequestsList;
