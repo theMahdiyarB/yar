@@ -41,7 +41,8 @@ const Dashboard = ({ user, onSignOut }) => {
 
           {/* Right Column: List of Open Requests */}
           <div className="bg-white p-6 rounded-xl shadow-lg">
-            <OpenRequestsList />
+            {/* Pass the authenticated user to the list so it can handle accept actions */}
+            <OpenRequestsList user={user} />
           </div>
 
         </main>
